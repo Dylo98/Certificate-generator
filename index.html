@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generator certyfikatów</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="certificate-panel">
+      <h1>Zapisz się na kurs</h1>
+      <form id="courseForm" class="courseForm">
+        <div class="firstName">
+          <label for="firstName">Imię: </label>
+          <input type="text" id="firstName" required />
+        </div>
+        <div class="lastName">
+          <label for="lastName">Nazwisko: </label>
+          <input type="text" id="lastName" required />
+        </div>
+        <label for="nameCourse">Na jaki kurs chcesz się zapisać</label>
+        <div class="courseName">
+          <select id="nameCourse" class="courseNameSelect">
+            <option value="JavaScript">JavaScript</option>
+            <option value="C#">C#</option>
+            <option value="Python">Python</option>
+          </select>
+        </div>
+        <button id="btnSubmit">Zapisz mnie</button>
+      </form>
+      <p id="courseInfo" class="hidden">Pomyślnie zapisano na kurs!</p>
+    </div>
+    <div class="admin-panel">
+      <form id="loginForm" class="loginForm">
+        <input type="text" id="username" placeholder="login" />
+        <input type="password" id="password" placeholder="hasło" />
+        <button id="btnLogin">Zaloguj się</button>
+      </form>
+      <p id="loginInfo" class="hidden">Nieprawidłowe dane użytkownika</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

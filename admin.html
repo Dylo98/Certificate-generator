@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styleAdmin.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="admin-panel">
+      <button id="btnGenerate" class="btn-generate">Generuj certyfikat</button>
+    </div>
+    <div id="certificate" class="certificate hidden">
+      <img src="./cert.png" alt="Medal" class="certificate-img" />
+      <h1>Certyfikat ukończenia</h1>
+      <div class="certificate-content">
+        <p>
+          Potwierdzamy, że <span id="certName" class="text-important"></span> z
+          powodzeniem ukończył kurs
+          <span id="courseName" class="text-important"></span> w dniu
+          <span id="currentDate" class="text-important"></span>
+        </p>
+      </div>
+      <div class="signature">
+        <div class="line"></div>
+        <p>Podpis</p>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+</html>

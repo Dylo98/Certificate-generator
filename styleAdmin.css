@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: white;
+}
+
+body {
+  background-color: #555;
+  position: relative;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin-panel .btn-generate {
+  font-size: 3rem;
+  padding: 1rem 4rem;
+  border-style: none;
+  border-radius: 10px;
+  background-color: olive;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-panel .btn-generate:hover {
+  background-color: #4e653d;
+}
+.certificate {
+  width: 200mm;
+  height: 200mm;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: 'Merienda', serif;
+}
+.certificate-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+.certificate-img {
+  width: 250px;
+  height: 250px;
+}
+
+.certificate h1 {
+  font-size: 6rem;
+  color: tan;
+}
+.certificate p {
+  font-size: 4rem;
+}
+.certificate-content .text-important {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.signature .line {
+  width: 200px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 1rem;
+}
+.signature p {
+  font-size: 2rem;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
